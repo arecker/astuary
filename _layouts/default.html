@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Astuary Art</title>
+    <link href="https://bootswatch.com/yeti/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+     .main {
+	 margin-top: 4em;
+	 margin-bottom: 4em;
+	 max-width: 900px;
+     }
+
+     .capslock {
+	 text-transform: uppercase;
+     }
+
+     .main .nav li a, .btn {
+	 color: grey;
+     }
+
+     .friends {
+	 margin-top: 2em;
+     }
+
+     .banner-image {
+	 margin: 0 auto;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid main">
+      <div class="page-header text-center">
+	<h1 class="lead capslock">Astuary Art</h1>
+      </div>
+      <ul class="nav nav-pills nav-justified capslock">
+	<li role="presentation"><a href="{% link index.html %}">Home</a></li>
+	<li role="presentation"><a href="{% link art.html %}">Art</a></li>
+	<li role="presentation"><a href="{% link about.html %}">About</a></li>
+	<li role="presentation"><a href="{% link contact.html %}">Contact</a></li>
+      </ul>
+      <hr/>
+      {{ content }}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+baseurl: ''
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock

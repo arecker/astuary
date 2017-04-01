@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="text-center">
+  <img src="http://placehold.it/800x400" class="img-responsive banner-image" />
+</div>
+<div class="page-header text-center">
+  <h1 class="lead capslock">Recent Works</h1>
+</div>
+<div class="row">
+  {% for gallery in site.data.galleries reversed limit:3 %}
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <a href="{% link art.html %}#{{ gallery.name | slugify }}">
+	<img src="http://placehold.it/400x400">
+      </a>
+      <div class="caption">
+	<h4 class="capslock">{{ gallery.name }}</h4>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<div class="container-fluid text-center friends">
+  <a href="{% link contact.html %}" class="btn btn-secondary btn-lg capslock" role="button" aria-disabled="true">
+    Let's be friends!
+  </a>
+</div>
