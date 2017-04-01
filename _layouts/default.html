@@ -6,7 +6,6 @@
     <link href="https://bootswatch.com/yeti/bootstrap.min.css" rel="stylesheet"/>
     <style>
      .main {
-	 margin-top: 4em;
 	 margin-bottom: 4em;
 	 max-width: 900px;
      }
@@ -15,15 +14,16 @@
 	 text-transform: uppercase;
      }
 
-     .main .nav li a, .btn {
-	 color: grey;
+     .main .nav li a, .btn, .lead {
+	 /*	 color: grey; */
+	 color: black;
      }
 
      .friends {
 	 margin-top: 2em;
      }
 
-     .banner-image {
+     .banner-image, .logo-image {
 	 margin: 0 auto;
      }
     </style>
@@ -31,7 +31,9 @@
   <body>
     <div class="container-fluid main">
       <div class="page-header text-center">
-	<h1 class="lead capslock">Astuary Art</h1>
+	<a href="{% link index.html %}">
+	  <img alt="logo" src="{% link images/logo.png %}" class="logo-image"/>
+	</a>
       </div>
       <ul class="nav nav-pills nav-justified capslock">
 	<li role="presentation"><a href="{% link index.html %}">Home</a></li>

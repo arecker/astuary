@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="text-center">
-  <img src="http://placehold.it/800x400" class="img-responsive banner-image" />
+  <img src="{% link images/banner.jpg %}" class="img-responsive banner-image" />
 </div>
 <div class="page-header text-center">
   <h1 class="lead capslock">Recent Works</h1>
@@ -12,7 +12,7 @@ layout: default
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <a href="{% link art.html %}#{{ gallery.name | slugify }}">
-	<img src="http://placehold.it/400x400">
+	<img src="/images/thumb-{{ gallery.feature }}">
       </a>
       <div class="caption">
 	<h4 class="capslock">{{ gallery.name }}</h4>

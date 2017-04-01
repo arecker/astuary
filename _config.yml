@@ -1,5 +1,6 @@
 baseurl: ''
 permalink: pretty
 exclude:
+  - upload.sh
   - Gemfile
   - Gemfile.lock

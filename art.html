@@ -5,27 +5,14 @@ layout: default
 <div class="page-header">
   <h2 id="{{ gallery.name | slugify }}" class="lead capslock">{{ gallery.name }}</h2>
   <div class="row">
+    {% for image in gallery.images %}
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
 	<a href="#">
-	  <img src="http://placehold.it/400x400">
+	  <img src="/images/{{ image }}">
 	</a>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-	<a href="#">
-	  <img src="http://placehold.it/400x400">
-	</a>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-	<a href="#">
-	  <img src="http://placehold.it/400x400">
-	</a>
-      </div>
-    </div>
-  </div>
+    {% endfor %}
 </div>
 {% endfor %}

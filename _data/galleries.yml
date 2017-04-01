@@ -1,5 +1,13 @@
-- name: Bloom
-
-- name: Blue
-
 - name: Infinity
+  feature: infinity-1.jpg
+  images:
+    - infinity-1.jpg
+    - infinity-2.jpg
+    - infinity-3.jpg
+
+- name: Bloom
+  feature: bloom-1.jpg
+  images:
+    - bloom-1.jpg
+    - bloom-2.jpg
+    - bloom-3.jpg
