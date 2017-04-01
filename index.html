@@ -8,7 +8,7 @@ layout: default
   <h1 class="lead capslock">Recent Works</h1>
 </div>
 <div class="row">
-  {% for gallery in site.data.galleries reversed limit:3 %}
+  {% for gallery in site.data.galleries reversed limit:6 %}
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <a href="{% link art.html %}#{{ gallery.name | slugify }}">

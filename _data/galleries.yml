@@ -11,3 +11,17 @@
     - bloom-1.jpg
     - bloom-2.jpg
     - bloom-3.jpg
+
+- name: Petals
+  feature: petals-1.jpg
+  images:
+    - petals-1.jpg
+    - petals-2.jpg
+    - petals-3.jpg
+
+- name: Blue
+  feature: blue-1.jpg
+  images:
+    - blue-1.jpg
+    - blue-2.jpg
+    - blue-3.jpg
