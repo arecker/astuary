@@ -1,0 +1,25 @@
+.main {
+    margin-bottom: 4em;
+    max-width: 900px;
+}
+
+.capslock {
+    text-transform: uppercase;
+}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+}
+
+.main .nav li a, .btn, .lead {
+    color: black;
+}
+
+.friends {
+    margin-top: 2em;
+}
+
+.banner-image, .logo-image {
+    margin: 0 auto;
+}

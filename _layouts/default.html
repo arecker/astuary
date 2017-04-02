@@ -2,35 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Astuary Art</title>
-    <link href="https://bootswatch.com/yeti/bootstrap.min.css" rel="stylesheet"/>
-    <style>
-     .main {
-	 margin-bottom: 4em;
-	 max-width: 900px;
-     }
-
-     .capslock {
-	 text-transform: uppercase;
-     }
-
-     .thumbnail {
-	 border: 0 none;
-	 box-shadow: none;
-     }
-
-     .main .nav li a, .btn, .lead {
-	 color: black;
-     }
-
-     .friends {
-	 margin-top: 2em;
-     }
-
-     .banner-image, .logo-image {
-	 margin: 0 auto;
-     }
-    </style>
+    <link href="{% link css/bootstrap.min.css %}" rel="stylesheet"/>
+    <link href="{% link css/yeti.min.css %}" rel="stylesheet"/>
+    <link href="{% link css/abigimage.jquery.min.css %}" rel="stylesheet"/>
+    <link href="{% link css/site.css %}" rel="stylesheet"/>
   </head>
   <body>
     <div class="container-fluid main">
@@ -48,5 +25,9 @@
       <hr/>
       {{ content }}
     </div>
+    <script type="text/javascript" src="{% link js/jquery.min.js %}"></script>
+    <script type="text/javascript" src="{% link js/bootstrap.min.js %}"></script>
+    <script type="text/javascript" src="{% link js/abigimage.jquery.min.js %}"></script>
+    <script type="text/javascript" src="{% link js/site.js %}"></script>
   </body>
 </html>
