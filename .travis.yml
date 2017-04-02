@@ -4,6 +4,8 @@ before_install:
   - export PATH=$PATH:$HOME/.local/bin
 script: bundle exec jekyll build
 after_success: aws s3 sync $TRAVIS_BUILD_DIR/_site/ s3://astuaryart.com/
+notifications:
+  email: false
 branches:
   only:
     - master
