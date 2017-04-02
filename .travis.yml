@@ -3,3 +3,7 @@ before_install:
   - pip install --user awscli
   - export PATH=$PATH:$HOME/.local/bin
 script: bundle exec jekyll build
+after_success: aws s3 sync $TRAVIS_BUILD_DIR/_site/ s3://astuaryart.com/
+branches:
+  only:
+    - master
