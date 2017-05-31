@@ -1,27 +1,35 @@
-- name: Blue
-  feature: blue-1.jpg
+- name: Petals
+  feature: petals-1.jpg
+  tags:
+    - restoration
   images:
-    - blue-1.jpg
-    - blue-2.jpg
-    - blue-3.jpg
-
-- name: Bloom
-  feature: bloom-1.jpg
-  images:
-    - bloom-1.jpg
-    - bloom-2.jpg
-    - bloom-3.jpg
+    - petals-1.jpg
+    - petals-2.jpg
+    - petals-3.jpg
 
 - name: Infinity
   feature: infinity-1.jpg
+  tags:
+    - restoration
   images:
     - infinity-1.jpg
     - infinity-2.jpg
     - infinity-3.jpg
 
-- name: Petals
-  feature: petals-1.jpg
+- name: Bloom
+  feature: bloom-1.jpg
+  tags:
+    - restoration
   images:
-    - petals-1.jpg
-    - petals-2.jpg
-    - petals-3.jpg
+    - bloom-1.jpg
+    - bloom-2.jpg
+    - bloom-3.jpg
+
+- name: Blue
+  feature: blue-1.jpg
+  tags:
+    - restoration
+  images:
+    - blue-1.jpg
+    - blue-2.jpg
+    - blue-3.jpg

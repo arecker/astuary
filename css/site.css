@@ -23,3 +23,12 @@
 .banner-image, .logo-image {
     margin: 0 auto;
 }
+
+.nav>li.language-nonactive>a:hover, .nav>li.language-nonactive>a:focus {
+    background-color: transparent;
+}
+
+.nav li.language-nonactive a {
+    pointer-events: none;
+    cursor: default;
+}

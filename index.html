@@ -1,16 +1,8 @@
 ---
 layout: default
 ---
-<div class="text-center">
-  <a href="{% link art.html %}#blue">
-    <img src="{% link images/banner.jpg %}" class="img-responsive banner-image" />
-  </a>
-</div>
-<div class="page-header text-center">
-  <h1 class="lead capslock">Recent Works</h1>
-</div>
 <div class="row">
-  {% for gallery in site.data.galleries reversed limit:6 %}
+  {% for gallery in site.data.galleries limit:6 %}
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <a href="{% link art.html %}#{{ gallery.name | slugify }}">

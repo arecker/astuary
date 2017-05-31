@@ -2,8 +2,17 @@
 layout: default
 title: Galleries
 ---
+<div class="row">
+  <ul class="nav nav-pills">
+    <li role="presentation" class="language-nonactive"><a href=""><strong>Categories</strong></a></li>
+    <li role="presentation"><a class="tag" href="#tag-all">All</a></li>
+    {% for tag in site.data.tags %}
+    <li role="presentation"><a class="tag" href="#tag-{{ tag.key }}">{{ tag.display }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
 {% for gallery in site.data.galleries reversed %}
-<div class="page-header">
+<div class="gallery page-header {% for tag in gallery.tags%}tag-{{ tag }}{% endfor %}">
   <h2 id="{{ gallery.name | slugify }}" class="lead capslock">{{ gallery.name }}</h2>
   <div class="row">
     {% for image in gallery.images %}
