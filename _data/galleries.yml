@@ -1,3 +1,17 @@
+- name: Floyd
+  feature: floyd.jpg
+  tags:
+    - dog
+  images:
+    - floyd.jpg
+
+- name: Alfie
+  feature: alfie.jpg
+  tags:
+    - dog
+  images:
+    - alfie.jpg
+
 - name: Petals
   feature: petals-1.jpg
   tags:

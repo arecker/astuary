@@ -11,7 +11,7 @@ title: Galleries
     {% endfor %}
   </ul>
 </div>
-{% for gallery in site.data.galleries reversed %}
+{% for gallery in site.data.galleries %}
 <div class="gallery page-header {% for tag in gallery.tags%}tag-{{ tag }}{% endfor %}">
   <h2 id="{{ gallery.name | slugify }}" class="lead capslock">{{ gallery.name }}</h2>
   <div class="row">
