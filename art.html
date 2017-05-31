@@ -16,6 +16,7 @@ title: Galleries
   <h2 id="{{ gallery.name | slugify }}" class="lead capslock">{{ gallery.name }}</h2>
   <div class="row">
     {% for image in gallery.images %}
+    {% if gallery.images.size > 2 %}
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
 	<a class="big-image" href="/images/{{ image }}">
@@ -23,6 +24,15 @@ title: Galleries
 	</a>
       </div>
     </div>
+    {% else %}
+    <div class="col-md-12">
+      <div class="thumbnail pull-left">
+	<a class="big-image" href="/images/{{ image }}">
+	  <img src="/images/thumb-{{ image }}">
+	</a>
+      </div>
+    </div>
+    {% endif %}
     {% endfor %}
   </div>
 </div>

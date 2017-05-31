@@ -1,3 +1,10 @@
+- name: Dash
+  feature: dash.jpg
+  tags:
+    - dog
+  images:
+    - dash.jpg
+
 - name: Floyd
   feature: floyd.jpg
   tags:
